@@ -5,24 +5,25 @@
 
 --PUNTO A) CREACIÓN DE LA BASE DE DATOS  
 
---Yo utilicé para el trabajo un editor de texto y la interfaz de DBeaver;
---Asi que ingresé a la base de datos de postgres en DBaver;
---Creé la base de datos con el comando "CREATE DATABASE nombre_bd;"
---Refresqué postgres en el menu de base de datos para que aparezca la nueva base de datos creada,
---y la establecí como objeto activo para trabajar en ella con el editor SQL.
+--Se utilizó para el trabajo un editor de texto y la interfaz de DBeaver.
+--Los pasos fueron:
+--Ingresar a la base de datos de postgres en DBaver.
+--Crear la base de datos con el comando "CREATE DATABASE nombre_bd;"
+--Refrescar postgres en el menu de base de datos para que aparezca la nueva base de datos creada,
+--y establecerla como objeto activo para trabajar en ella con el editor SQL.
 
 CREATE DATABASE tp_toscano;
 
 --Para crear la base de datos en postgres desde la terminal SHELL los pasos serían:
---Presionar Enter hasta que te pida la contraseña del usuario;
---Ingresar contraseña del usuario si lo requiere;
---Ya dentro de la bd de postgres ingreso el comando "CREATE DATABASE nombre_bd;" para crear la base de datos.
---Una vez creada la nueva base de datos, ingreso a ella con "\c nombre_bd;" para la creación de tablas y insercion de datos en la misma  
+--Presionar Enter hasta que te pida la contraseña del usuario.
+--Ingresar contraseña del usuario si lo requiere.
+--Ya dentro de la bd de postgres se ingresa el comando "CREATE DATABASE nombre_bd;" para crear la base de datos.
+--Una vez creada la nueva base de datos, se ingresa a ella con "\c nombre_bd;" para la creación de tablas y insercion de datos en la misma. 
 
  
 --PUNTOS B, C Y D) CREACIÓN DE LAS TABLAS CON CLAVES FORANEAS IDENTIFICADAS
 
---Una vez identifacadas las claves foraneas ordené la creación de las tablas para que no haya errores al ejecutar.
+--Una vez identifacadas las claves foraneas, ordené la creación de las tablas para que no haya errores al ejecutar.
 
 
 CREATE TABLE feria (
@@ -103,7 +104,7 @@ CHECK (precio_por_bulto > 0 AND peso_por_bulto > 0) --Restricción para evitar e
 
 --LA INSERCIÓN DE DATOS EN LAS TABLAS ES DML.
 
---Metodo utilizado: Fuí insertando los registros por partes en el mismo orden en el que creé las tablas. 
+--Metodo utilizado: fuí insertando los registros por partes en el mismo orden en el que creé las tablas. 
 --Pero antes hice las siguintes modificaciones/correcciones al archivo para la inserción de datos:
 
 --Sacar las comillas en los nombres de las tablas en el INSERT INTO;
